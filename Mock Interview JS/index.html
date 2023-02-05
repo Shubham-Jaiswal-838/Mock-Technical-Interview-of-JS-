@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container, form{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: aquamarine;
+            padding: 20px;
+            height: 100vh;
+            width: 100%;
+        }
+        form{
+            
+            flex-direction: column;
+            row-gap: 1rem;
+            width: 50%;
+            margin: 10px auto;
+
+            border: 1px solid gray;
+        }
+        input{
+            padding: 5px 10px;
+        }
+        #btn{
+            padding: 5px 10px;
+        }
+        #detailsContainer{
+            /* color: white; */
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        #nameTwo{
+            border-top: 5px solid rgb(89, 225, 214);
+        }
+        #phoneTwo{
+            border-bottom: 5px solid rgb(89, 225, 214);
+            padding-bottom: 5px;
+
+        }
+       
+         
+    </style>
+
+</head>
+<body>
+<!-- // name, email, phone Number,  add, button  -->
+       
+    <div class="container">
+        <form >
+
+            <input type="text" name="" id="name"  placeholder="Name">
+            <input type="email" name="" id="email" placeholder="Email">
+            <input type="tel" name="" id="phone" placeholder="Phone">
+             
+            <button id="btn">Add</button>
+
+            <div id="detailsContainer">
+
+            </div>
+        </form>
+
+
+      
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
